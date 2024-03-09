@@ -8,6 +8,9 @@ dependencies:
   '@builder.io/qwik':
     specifier: ^1.4.5
     version: 1.5.1(undici@6.7.1)
+  reveal.js:
+    specifier: ^5.0.5
+    version: 5.0.5
 
 devDependencies:
   autoprefixer:
@@ -1293,6 +1296,11 @@ packages:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
+
+  /reveal.js@5.0.5:
+    resolution: {integrity: sha512-MPWPV/cRlkZhh72dAGYv/bUCr9ulwM2/ucCqiL/KN4tvhb6VvN49iwOyWHE08wppj8lMQXi2xbS3kyKgfyTYqg==}
+    engines: {node: '>=18.0.0'}
+    dev: false
 
   /rollup@4.12.1:
     resolution: {integrity: sha512-ggqQKvx/PsB0FaWXhIvVkSWh7a/PCLQAsMjBc+nA2M8Rv2/HG0X6zvixAB7KyZBRtifBUhy5k8voQX/mRnABPg==}

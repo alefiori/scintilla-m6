@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik"
+import { useRouter } from "./utils"
 
 export const App = component$(() => {
-  return <></>
+  const currentRoute = useRouter()
+  return currentRoute
 })
