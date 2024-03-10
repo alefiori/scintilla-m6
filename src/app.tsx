@@ -3,5 +3,6 @@ import { useRouter } from "./utils"
 
 export const App = component$(() => {
   const currentRoute = useRouter()
+
   return currentRoute
 })

@@ -13,6 +13,9 @@ dependencies:
     version: 5.0.5
 
 devDependencies:
+  '@types/reveal.js':
+    specifier: ^5.0.1
+    version: 5.0.1
   autoprefixer:
     specifier: ^10.4.18
     version: 10.4.18(postcss@8.4.35)
@@ -406,6 +409,10 @@ packages:
 
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  /@types/reveal.js@5.0.1:
+    resolution: {integrity: sha512-SrfaT84af/yfobaYH2Bz5uLmyyhgSZ5i4vXC7JM3AmJMbeUW/d/DTXuudj70Ddd8rcQxiwD52XWxdjO+xnDrPw==}
+    dev: true
 
   /@zeit/schemas@2.29.0:
     resolution: {integrity: sha512-g5QiLIfbg3pLuYUJPlisNKY+epQJTcMDsOnVNkscrDP1oi7vmJnzOANYJI/1pZcVJ6umUkBv3aFtlg1UvUHGzA==}

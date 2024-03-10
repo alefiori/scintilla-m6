@@ -1,11 +1,16 @@
 import { JSXOutput, useSignal, useTask$ } from "@builder.io/qwik"
-import { Home } from "../pages"
+import { Home, Lesson1 } from "../pages"
 
 const routes = {
   "": <Home />,
+  "1": <Lesson1 />,
 }
 
 type Route = keyof typeof routes
+
+export const menuElements = Object.keys(routes).filter(
+  (route) => route !== ""
+) as ReadonlyArray<Route>
 
 export const navigateTo = (route: Route): void => {
   window.history.pushState({}, "", route)
