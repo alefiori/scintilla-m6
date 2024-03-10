@@ -27,8 +27,7 @@ jobs:
       - name: Install NPM Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build Check
-        if: ${{ always() }}
+      - name: Build 🏗️
         run: pnpm build
 
       - name: Deploy 🚀
