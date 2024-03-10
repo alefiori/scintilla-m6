@@ -4,9 +4,11 @@ import Reveal from "reveal.js"
 export const Deck = component$(() => {
   useVisibleTask$(() => {
     const deck = new Reveal({
-      slideNumber: true,
       controls: true,
       progress: true,
+      center: true,
+      slideNumber: false,
+      hash: true,
     })
     deck.initialize()
   })
