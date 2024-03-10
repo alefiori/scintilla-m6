@@ -1,38 +1,26 @@
-# Qwik + Vite
+# Slides for a basic course about Web Development
 
-## Qwik in CSR mode
+This repository contains the slides for a basic course about web development. The project is built using Vite, Qwik and Tailwind. The slides are built using Revealjs.
 
-This starter is using a pure CSR (Client Side Rendering) mode. This means, that the application is fully bootstrapped in the browser. Most of Qwik innovations however take advantage of SSR (Server Side Rendering) mode.
+## Tech Stack
 
-```ts
-export default defineConfig({
-  plugins: [
-    qwikVite({
-      csr: true,
-    }),
-  ],
-})
-```
+- Vite (https://vitejs.dev/)
+- Qwik (https://qwik.dev/)
+- TypeScript (https://www.typescriptlang.org/)
+- Tailwind CSS (https://tailwindcss.com/)
+- Revealjs (https://revealjs.com/)
 
-Use `npm create qwik@latest` to create a full production ready Qwik application, using SSR and [QwikCity](https://qwik.builder.io/docs/qwikcity/), our server-side metaframwork.
+## How to run
 
-## Usage
+### Prerequisites
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+- Node.js (https://nodejs.org/)
+- Pnpm (https://pnpm.io/)
+- Git (https://git-scm.com/)
 
-Learn more on the [Qwik Website](https://qwik.builder.io) and join our community on our [Discord](https://qwik.builder.io/chat)
+### Steps
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run dev`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
+1. Clone the repository
+2. Install the dependencies (`pnpm install`)
+3. Run the development server (`pnpm dev`)
+4. Open the browser at `http://localhost:5173`
