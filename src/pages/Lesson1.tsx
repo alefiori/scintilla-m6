@@ -3,7 +3,7 @@ import { Deck, FirstSlide, GenericSlide } from "../components"
 
 export const Lesson1 = component$(() => {
   return (
-    <main class="h-screen relative">
+    <main class="h-screen">
       <Deck>
         <FirstSlide lessonNumber={1} />
         <GenericSlide title="Cosa vedremo in questo modulo?">
