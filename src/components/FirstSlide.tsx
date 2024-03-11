@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik"
-import { GenericSlide, Slide } from "."
+import { GenericSlide } from "."
 
 type Props = {
   lessonNumber: number
