@@ -1,8 +1,14 @@
-import { Slot, component$ } from "@builder.io/qwik"
+import { ClassList, Slot, component$ } from "@builder.io/qwik"
 
-export const Slide = component$(() => {
+type Props = {
+  title?: string
+  className?: ClassList
+}
+
+export const Slide = component$<Props>(({ title, className }) => {
   return (
-    <section>
+    <section class={className}>
+      <h2>{title}</h2>
       <Slot />
     </section>
   )

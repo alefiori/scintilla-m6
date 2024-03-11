@@ -1,14 +1,15 @@
 import { Slot, component$, useVisibleTask$ } from "@builder.io/qwik"
 import Reveal from "reveal.js"
+import { Footer } from "."
 
 export const Deck = component$(() => {
   useVisibleTask$(() => {
     const deck = new Reveal({
       controls: true,
       progress: true,
-      center: true,
       slideNumber: false,
       hash: true,
+      center: false,
     })
     deck.initialize()
   })
@@ -18,6 +19,7 @@ export const Deck = component$(() => {
       <div class="slides">
         <Slot />
       </div>
+      <Footer />
     </div>
   )
 })

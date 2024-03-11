@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik"
-import { GenericSlide } from "."
+import { Slide } from "."
 
 type Props = {
   lessonNumber: number
@@ -7,8 +7,11 @@ type Props = {
 
 export const FirstSlide = component$<Props>(({ lessonNumber }) => {
   return (
-    <GenericSlide title="Sviluppo di Applicazioni Web e Mobile">
+    <Slide
+      title="Sviluppo di Applicazioni Web e Mobile"
+      className="top-1/2 -translate-y-1/2"
+    >
       <small>Lezione {lessonNumber}</small>
-    </GenericSlide>
+    </Slide>
   )
 })

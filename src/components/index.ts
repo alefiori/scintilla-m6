@@ -1,4 +1,4 @@
 export * from "./Deck"
 export * from "./FirstSlide"
-export * from "./GenericSlide"
+export * from "./Footer"
 export * from "./Slide"

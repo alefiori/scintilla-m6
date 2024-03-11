@@ -13,7 +13,7 @@ export const Home = component$(() => {
           <button
             key={index}
             type="button"
-            class="w-full px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+            class="w-full px-4 py-2 font-medium text-left rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-highlight focus:outline-none focus:ring-2 focus:ring-highlight focus:text-highlight"
             onClick$={() => navigateTo(route)}
           >
             Lezione {route}
