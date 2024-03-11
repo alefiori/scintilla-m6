@@ -8,5 +8,4 @@ export default defineConfig({
       csr: true,
     }),
   ],
-  base: '/scintilla-m6/'
 })
