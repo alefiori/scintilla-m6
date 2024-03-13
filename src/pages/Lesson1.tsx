@@ -223,6 +223,16 @@ export const Lesson1 = component$(() => {
             </pre>
           </p>
         </Slide>
+        <Slide title="Introduzione al DOM">
+          <p class="fragment">
+            Il Document Object Model (DOM) è un concetto fondamentale nello sviluppo web, rappresentando la struttura gerarchica di un documento HTML o XML. Il DOM fornisce un’interfaccia di programmazione che consente agli sviluppatori di manipolare dinamicamente la struttura, i contenuti e lo stile di una pagina web.
+          </p>
+        </Slide>
+        <Slide title="Funzionamento del DOM">
+          <p class="fragment">
+            Il DOM rappresenta ogni elemento del documento come un oggetto, consentendo agli sviluppatori di accedere, modificare e aggiornare il contenuto della pagina in tempo reale. La struttura ad albero del DOM riflette la gerarchia degli elementi nel documento, con il nodo radice rappresentante l’intera pagina e i nodi figli rappresentanti gli elementi HTML. Manipolare il DOM tramite JavaScript è essenziale per creare interattività e dinamismo nelle applicazioni web.
+          </p>
+        </Slide>
         <Slide title="Dove scriviamo il codice?">
           <p class="fragment">
             Durante il corso utilizzeremo un editor di testo per scrivere il
