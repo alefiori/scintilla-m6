@@ -1,5 +1,6 @@
 import { Slot, component$, useVisibleTask$ } from "@builder.io/qwik"
 import Reveal from "reveal.js"
+import RevealHighlight from "reveal.js/plugin/highlight/highlight"
 import { Footer } from "."
 
 export const Deck = component$(() => {
@@ -11,7 +12,9 @@ export const Deck = component$(() => {
       hash: true,
       center: false,
     })
-    deck.initialize()
+    deck.initialize({
+      plugins: [RevealHighlight],
+    })
   })
 
   return (

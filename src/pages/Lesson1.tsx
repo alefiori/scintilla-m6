@@ -1,13 +1,45 @@
 import { component$ } from "@builder.io/qwik"
 import { Deck, FirstSlide, Slide } from "../components"
 
+const htmlExample = `<html>
+<head>
+  <title>La mia prima pagina</title>
+</head>
+
+<body>
+  <h1>Benvenuto nel mondo web</h1>
+  <p>Questo è un esempio di HTML e CSS</p>
+</body>
+</html>`
+
+const cssExample = `body {
+  margin: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  color: #3498db;
+}`
+
+const jsExample = `// Dichiarazione di una variabile
+let messaggio = "Benvenuto nel mondo JavaScript!"
+// Stampa del messaggio nella console
+console.log(messaggio)
+// Funzione di saluto
+function saluta(nome) {
+  return "Ciao, " + nome + "!"
+}
+// Esempio di chiamata della funzione
+let salutoUtente = saluta("Giovanni")
+console.log(salutoUtente)`
+
 export const Lesson1 = component$(() => {
   return (
     <main class="h-screen">
       <Deck>
         <FirstSlide lessonNumber={1} />
-        <Slide title="Cosa vedremo in questo modulo?">
-          <ul>
+        <Slide title="Cosa vedremo?">
+          <ul class="fragment">
             <li>Cos'è un'applicazione web</li>
             <li>Cos'è un'applicazione mobile</li>
             <li>Markup - HTML & CSS</li>
@@ -17,6 +49,16 @@ export const Lesson1 = component$(() => {
             <li>Come effettuare il rilascio di un'applicazione</li>
           </ul>
         </Slide>
+        <Slide title="Obiettivi del corso">
+          <p class="fragment">
+            L'obiettivo del corso è quello di fornire le basi necessarie per
+            sviluppare applicazioni web e mobile.
+          </p>
+          <p class="fragment">
+            Durante il corso verranno trattati i principali concetti e
+            tecnologie necessarie per sviluppare applicazioni web e mobile.
+          </p>
+        </Slide>
         <Slide title="Cos'è un'applicazione web?">
           <p class="fragment">
             Un'applicazione web è un'applicazione software che viene eseguita su
@@ -25,6 +67,17 @@ export const Lesson1 = component$(() => {
           <p class="fragment">
             Le applicazioni web possono essere accessibili da qualsiasi
             dispositivo connesso a internet.
+          </p>
+        </Slide>
+        <Slide title="Esempi di applicazioni web">
+          <p class="fragment">
+            Alcuni esempi di applicazioni web sono: Google, Facebook, Twitter,
+            YouTube, Amazon, eBay, Netflix, Spotify, WhatsApp Web, ecc.
+          </p>
+          <p class="fragment">
+            Le applicazioni web possono essere utilizzate per svolgere svariate
+            attività come la ricerca di informazioni, la comunicazione,
+            l'acquisto di prodotti, la fruizione di contenuti multimediali, ecc.
           </p>
         </Slide>
         <Slide title="Cos'è un'applicazione mobile?">
@@ -43,6 +96,17 @@ export const Lesson1 = component$(() => {
             <li>Applicazioni ibride</li>
             <li>Applicazioni web - PWA</li>
           </ul>
+        </Slide>
+        <Slide title="Esempi di applicazioni mobile">
+          <p class="fragment">
+            Alcuni esempi di applicazioni mobile sono: Facebook, Instagram,
+            Twitter, YouTube, WhatsApp, Spotify, Netflix, Amazon, eBay, ecc.
+          </p>
+          <p class="fragment">
+            Le applicazioni mobile possono essere utilizzate per svolgere
+            svariate attività come la comunicazione, la fruizione di contenuti
+            multimediali, l'acquisto di prodotti, ecc.
+          </p>
         </Slide>
         <Slide title="Applicazioni native">
           <p class="fragment">
@@ -81,13 +145,33 @@ export const Lesson1 = component$(() => {
             visualizzare e interagire con pagine web.
           </p>
           <p class="fragment">
-            I browser più utilizzati sono Google Chrome, Mozilla Firefox,
-            Safari, Microsoft Edge e Opera.
+            I browser consentono di navigare su internet e di accedere a
+            svariate risorse come siti web, immagini, video, ecc.
           </p>
           <p class="fragment">
             I browser sono in grado di interpretare e visualizzare pagine web
             scritte in HTML, CSS e JavaScript.
           </p>
+        </Slide>
+        <Slide title="Esempi di browser">
+          <p class="fragment">
+            I browser più utilizzati sono Google Chrome, Mozilla Firefox,
+            Safari, Microsoft Edge e Opera.
+          </p>
+          <div class="flex justify-between fragment">
+            <img src="/chrome.svg" alt="chrome" />
+            <img src="/firefox.png" alt="firefox" />
+            <img src="/safari.svg" alt="safari" />
+            <img src="/edge.svg" alt="edge" />
+            <img src="/opera.svg" alt="opera" />
+          </div>
+          <a
+            class="fragment"
+            href="https://www.google.com/chrome/"
+            target="_blank"
+          >
+            google.com/chrome
+          </a>
         </Slide>
         <Slide title="Markup - HTML & CSS">
           <p class="fragment">
@@ -97,6 +181,18 @@ export const Lesson1 = component$(() => {
           <p class="fragment">
             CSS (Cascading Style Sheets) è un linguaggio usato per descrivere la
             presentazione di un documento scritto in HTML.
+          </p>
+        </Slide>
+        <Slide title="Esempio di codice">
+          <p class="fragment">
+            <pre>
+              <code class="html">{htmlExample}</code>
+            </pre>
+          </p>
+          <p class="fragment">
+            <pre>
+              <code class="css">{cssExample}</code>
+            </pre>
           </p>
         </Slide>
         <Slide title="JavaScript - Cos'è?">
@@ -109,14 +205,11 @@ export const Lesson1 = component$(() => {
             interattività e dinamicità a un sito web.
           </p>
         </Slide>
-        <Slide title="Obiettivi del corso">
+        <Slide title="JavaScript - Esempio">
           <p class="fragment">
-            L'obiettivo del corso è quello di fornire le basi necessarie per
-            sviluppare applicazioni web e mobile.
-          </p>
-          <p class="fragment">
-            Durante il corso verranno trattati i principali concetti e
-            tecnologie necessarie per sviluppare applicazioni web e mobile.
+            <pre>
+              <code class="javascript">{jsExample}</code>
+            </pre>
           </p>
         </Slide>
         <Slide title="Dove scriviamo il codice?">
@@ -133,7 +226,9 @@ export const Lesson1 = component$(() => {
           <div class="r-stack">
             <img src="/vscode.svg" alt="vscode" />
           </div>
-          <a href="https://code.visualstudio.com/">code.visualstudio.com</a>
+          <a href="https://code.visualstudio.com/" target="_blank">
+            code.visualstudio.com
+          </a>
           <p class="fragment">
             Visual Studio Code è un editor di codice sorgente sviluppato da
             Microsoft.
