@@ -2,15 +2,16 @@ import { component$ } from "@builder.io/qwik"
 import { Deck, FirstSlide, Slide } from "../components"
 
 const htmlExample = `<html>
-<head>
-  <title>La mia prima pagina</title>
-</head>
+  <head>
+    <title>La mia prima pagina</title>
+  </head>
 
-<body>
-  <h1>Benvenuto nel mondo web</h1>
-  <p>Questo è un esempio di HTML e CSS</p>
-</body>
-</html>`
+  <body>
+    <h1>Benvenuto nel mondo web</h1>
+    <p>Questo è un esempio di HTML e CSS</p>
+  </body>
+</html>
+`
 
 const cssExample = `body {
   margin: 20px;
@@ -21,17 +22,16 @@ h1 {
   color: #3498db;
 }`
 
-const jsExample = `// Dichiarazione di una variabile
-let messaggio = "Benvenuto nel mondo JavaScript!"
-// Stampa del messaggio nella console
+const jsExample = `const messaggio = "Benvenuto nel mondo JavaScript!"
 console.log(messaggio)
-// Funzione di saluto
 function saluta(nome) {
   return "Ciao, " + nome + "!"
 }
-// Esempio di chiamata della funzione
-let salutoUtente = saluta("Giovanni")
+const salutoUtente = saluta("Giovanni")
 console.log(salutoUtente)`
+
+const jsOutputExample = `Benvenuto nel mondo JavaScript!
+Ciao, Giovanni!`
 
 export const Lesson1 = component$(() => {
   return (
@@ -183,7 +183,7 @@ export const Lesson1 = component$(() => {
             presentazione di un documento scritto in HTML.
           </p>
         </Slide>
-        <Slide title="Esempio di codice">
+        <Slide title="Esempio di codice (1/2)">
           <p class="fragment">
             <pre>
               <code class="html">{htmlExample}</code>
@@ -194,6 +194,11 @@ export const Lesson1 = component$(() => {
               <code class="css">{cssExample}</code>
             </pre>
           </p>
+        </Slide>
+        <Slide title="Esempio di codice (2/2)">
+          <div class="r-stack">
+            <img src="/screenshot1.png" alt="screenshot" />
+          </div>
         </Slide>
         <Slide title="JavaScript - Cos'è?">
           <p class="fragment">
@@ -209,6 +214,12 @@ export const Lesson1 = component$(() => {
           <p class="fragment">
             <pre>
               <code class="javascript">{jsExample}</code>
+            </pre>
+          </p>
+          <p class="fragment">
+            Output
+            <pre>
+              <code>{jsOutputExample}</code>
             </pre>
           </p>
         </Slide>

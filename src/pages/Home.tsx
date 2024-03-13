@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik"
 import { menuElements, navigateTo } from "../utils"
+import { GitHubCorner } from "../components"
 
 export const Home = component$(() => {
   return (
@@ -21,6 +22,7 @@ export const Home = component$(() => {
           </div>
         ))}
       </div>
+      <GitHubCorner />
     </main>
   )
 })
