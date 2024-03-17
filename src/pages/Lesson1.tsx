@@ -62,7 +62,7 @@ export const Lesson1 = component$(() => {
         <Slide title="Cos'è un'applicazione web?">
           <p class="fragment">
             Un'applicazione web è un'applicazione software che viene eseguita su
-            un server web e acceduta tramite un browser web.
+            un server web e visualizzata tramite un browser web.
           </p>
           <p class="fragment">
             Le applicazioni web possono essere accessibili da qualsiasi
@@ -90,13 +90,6 @@ export const Lesson1 = component$(() => {
             attraverso un'app store.
           </p>
         </Slide>
-        <Slide title="Quali sono le varie tipologie di applicazioni mobile?">
-          <ul>
-            <li>Applicazioni native</li>
-            <li>Applicazioni ibride</li>
-            <li>Applicazioni web - PWA</li>
-          </ul>
-        </Slide>
         <Slide title="Esempi di applicazioni mobile">
           <p class="fragment">
             Alcuni esempi di applicazioni mobile sono: Facebook, Instagram,
@@ -107,6 +100,13 @@ export const Lesson1 = component$(() => {
             svariate attività come la comunicazione, la fruizione di contenuti
             multimediali, l'acquisto di prodotti, ecc.
           </p>
+        </Slide>
+        <Slide title="Quali sono le varie tipologie di applicazioni mobile?">
+          <ul>
+            <li>Applicazioni native</li>
+            <li>Applicazioni ibride</li>
+            <li>Applicazioni web - PWA</li>
+          </ul>
         </Slide>
         <Slide title="Applicazioni native">
           <p class="fragment">
@@ -173,6 +173,26 @@ export const Lesson1 = component$(() => {
             google.com/chrome
           </a>
         </Slide>
+        <Slide title="Cos'è l'URL?">
+          <p class="fragment">
+            Un URL (Uniform Resource Locator) è l'indirizzo di un file o di una
+            risorsa su internet.
+          </p>
+          <p class="fragment">
+            Un URL consente di identificare e accedere a una risorsa tramite un
+            browser web.
+          </p>
+        </Slide>
+        <Slide title="Linguaggi di markup">
+          <p class="fragment">
+            Un linguaggio di markup è un insieme di simboli e regole utilizzati
+            per definire la struttura e la presentazione di un documento.
+          </p>
+          <p class="fragment">
+            I principali linguaggi di markup utilizzati per scrivere pagine web
+            sono HTML e CSS.
+          </p>
+        </Slide>
         <Slide title="Markup - HTML & CSS">
           <p class="fragment">
             HTML (HyperText Markup Language) è il linguaggio di markup standard
@@ -200,6 +220,17 @@ export const Lesson1 = component$(() => {
             <img src="/screenshot1.png" alt="screenshot" />
           </div>
         </Slide>
+        <Slide title="Linguaggi di programmazione">
+          <p class="fragment">
+            I linguaggi di programmazione sono strumenti utilizzati per scrivere
+            istruzioni che vengono interpretate o compilate da un computer per
+            eseguire determinate operazioni.
+          </p>
+          <p class="fragment">
+            I principali linguaggi di programmazione utilizzati per sviluppare
+            applicazioni web e mobile sono JavaScript, Python, Java, C# e Swift.
+          </p>
+        </Slide>
         <Slide title="JavaScript - Cos'è?">
           <p class="fragment">
             JavaScript è un linguaggio di programmazione ad alto livello.
@@ -225,12 +256,22 @@ export const Lesson1 = component$(() => {
         </Slide>
         <Slide title="Introduzione al DOM">
           <p class="fragment">
-            Il Document Object Model (DOM) è un concetto fondamentale nello sviluppo web, rappresentando la struttura gerarchica di un documento HTML o XML. Il DOM fornisce un’interfaccia di programmazione che consente agli sviluppatori di manipolare dinamicamente la struttura, i contenuti e lo stile di una pagina web.
+            Il Document Object Model (DOM) è un concetto fondamentale nello
+            sviluppo web, rappresentando la struttura gerarchica di un documento
+            HTML o XML. Il DOM fornisce un’interfaccia di programmazione che
+            consente agli sviluppatori di manipolare dinamicamente la struttura,
+            i contenuti e lo stile di una pagina web.
           </p>
         </Slide>
         <Slide title="Funzionamento del DOM">
           <p class="fragment">
-            Il DOM rappresenta ogni elemento del documento come un oggetto, consentendo agli sviluppatori di accedere, modificare e aggiornare il contenuto della pagina in tempo reale. La struttura ad albero del DOM riflette la gerarchia degli elementi nel documento, con il nodo radice rappresentante l’intera pagina e i nodi figli rappresentanti gli elementi HTML. Manipolare il DOM tramite JavaScript è essenziale per creare interattività e dinamismo nelle applicazioni web.
+            Il DOM rappresenta ogni elemento del documento come un oggetto,
+            consentendo agli sviluppatori di accedere, modificare e aggiornare
+            il contenuto della pagina in tempo reale. La struttura ad albero del
+            DOM riflette la gerarchia degli elementi nel documento, con il nodo
+            radice rappresentante l’intera pagina e i nodi figli rappresentanti
+            gli elementi HTML. Manipolare il DOM tramite JavaScript è essenziale
+            per creare interattività e dinamismo nelle applicazioni web.
           </p>
         </Slide>
         <Slide title="Dove scriviamo il codice?">
@@ -258,6 +299,23 @@ export const Lesson1 = component$(() => {
             Visual Studio Code è disponibile per Windows, macOS e Linux ed è
             gratuito e open source.
           </p>
+        </Slide>
+        <Slide title="Domande (1/2)">
+          <p class="fragment">Cosa si intente per applicazione web?</p>
+          <p class="fragment">Cosa si intente per applicazione mobile?</p>
+          <p class="fragment">
+            Quali sono le varie tipologie di applicazioni mobile?
+          </p>
+          <p class="fragment">Cosa si intente per browser?</p>
+          <p class="fragment">Quali sono alcuni esempi di browser?</p>
+        </Slide>
+        <Slide title="Domande (2/2)">
+          <p class="fragment">Cosa si intente per URL?</p>
+          <p class="fragment">Cos'è l'HTML?</p>
+          <p class="fragment">Cos'è il CSS?</p>
+          <p class="fragment">Cos'è il JavaScript?</p>
+          <p class="fragment">Cos'è il DOM?</p>
+          <p class="fragment">Dove scriviamo il codice?</p>
         </Slide>
       </Deck>
     </main>
