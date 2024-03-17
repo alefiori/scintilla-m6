@@ -19,11 +19,13 @@ export const Deck = component$(() => {
   })
 
   return (
-    <div class="reveal">
-      <div class="slides">
-        <Slot />
+    <main class="h-screen">
+      <div class="reveal">
+        <div class="slides">
+          <Slot />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </main>
   )
 })

@@ -1,9 +1,10 @@
 import { JSXOutput, useSignal, useTask$ } from "@builder.io/qwik"
-import { Home, Lesson1 } from "../pages"
+import { Home, Lesson1, Lesson2 } from "../pages"
 
 const routes = {
   "": <Home />,
   "1": <Lesson1 />,
+  "2": <Lesson2 />,
 }
 
 type Route = keyof typeof routes
