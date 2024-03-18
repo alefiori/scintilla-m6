@@ -102,10 +102,11 @@ export const Lesson1 = component$(() => {
           </p>
         </Slide>
         <Slide title="Quali sono le varie tipologie di applicazioni mobile?">
-          <ul>
+          <ul class="fragment">
             <li>Applicazioni native</li>
+            <li>Applicazioni crossplatform</li>
             <li>Applicazioni ibride</li>
-            <li>Applicazioni web - PWA</li>
+            <li>(Applicazioni web - PWA)</li>
           </ul>
         </Slide>
         <Slide title="Applicazioni native">
@@ -116,6 +117,16 @@ export const Lesson1 = component$(() => {
           <p class="fragment">
             Le applicazioni native sono scritte in linguaggi specifici come
             Swift o Objective-C per iOS e Java o Kotlin per Android.
+          </p>
+        </Slide>
+        <Slide title="Applicazioni crossplatform">
+          <p class="fragment">
+            Le applicazioni crossplatform sono applicazioni sviluppate per
+            funzionare su più piattaforme come iOS e Android.
+          </p>
+          <p class="fragment">
+            Le applicazioni crossplatform sono scritte in linguaggi come
+            JavaScript, C# o Dart e possono essere eseguite su più piattaforme.
           </p>
         </Slide>
         <Slide title="Applicazioni ibride">
@@ -189,8 +200,8 @@ export const Lesson1 = component$(() => {
             per definire la struttura e la presentazione di un documento.
           </p>
           <p class="fragment">
-            I principali linguaggi di markup utilizzati per scrivere pagine web
-            sono HTML e CSS.
+            Il principale linguaggio di markup utilizzato per creare pagine web
+            è HTML.
           </p>
         </Slide>
         <Slide title="Markup - HTML & CSS">
