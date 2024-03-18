@@ -136,6 +136,254 @@ export const Lesson2 = component$(() => {
           <strong>style</strong> - Stile CSS
         </p>
       </Slide>
+      <Slide title="Il tag <head>">
+        <p class="fragment">
+          Il tag <strong>head</strong> è un elemento fondamentale di un
+          documento HTML. Definisce le informazioni di intestazione per il
+          documento HTML.
+        </p>
+        <p class="fragment">
+          Il contenuto del tag <strong>head</strong> non viene visualizzato
+          direttamente sulla pagina, ma fornisce informazioni vitali per i
+          browser e i motori di ricerca.
+        </p>
+        <p class="fragment">
+          É essenziale per definire metadati, collegamenti e script fondamentali
+          per ogni pagina web.
+        </p>
+        <p class="fragment">
+          <a href="https://developer.mozilla.org/it/docs/Web/HTML/Element/head">
+            Documentazione del tag <strong>head</strong>
+          </a>
+        </p>
+      </Slide>
+      <Slide title="Contenuti del tag <head>">
+        <ul>
+          <li class="fragment">
+            <strong>{"<title>"}</strong>: Definisce il titolo della pagina
+            visualizzato nella barra del browser.
+          </li>
+          <li class="fragment">
+            <strong>{"<meta>"}</strong>: Fornisce metadati, come la descrizione
+            della pagina, le parole chiave, e le istruzioni per i motori di
+            ricerca.
+          </li>
+          <li class="fragment">
+            <strong>{"<link>"}</strong>: Collega il documento HTML a fogli di
+            stile esterni (CSS) o a altre risorse.
+          </li>
+          <li class="fragment">
+            <strong>{"<script>"}</strong>: Specifica script JavaScript e
+            collegamenti a file JavaScript esterni.
+          </li>
+          <li class="fragment">
+            <strong>{"<style>"}</strong>: Contiene le regole di stile CSS per la
+            pagina.
+          </li>
+        </ul>
+      </Slide>
+      <Slide title="Il tag <body>">
+        <p class="fragment">
+          Il tag <strong>body</strong> rappresenta il contenuto della pagina
+          web.
+        </p>
+        <p class="fragment">
+          Il contenuto del tag <strong>body</strong> è visualizzato direttamente
+          sulla pagina.
+        </p>
+        <p class="fragment">
+          <a href="https://developer.mozilla.org/it/docs/Web/HTML/Element/body">
+            Documentazione del tag <strong>body</strong>
+          </a>
+        </p>
+      </Slide>
+      <Slide title="Risorse">
+        <ul>
+          <li class="fragment">
+            <a
+              href="https://developer.mozilla.org/it/docs/Web/HTML"
+              target="_blank"
+            >
+              Documentazione HTML su MDN
+            </a>
+          </li>
+          <li class="fragment">
+            <a
+              href="https://www.w3schools.com/html/default.asp"
+              target="_blank"
+            >
+              W3Schools - HTML
+            </a>
+          </li>
+          <li class="fragment">
+            <a
+              href="https://www.codecademy.com/learn/learn-html"
+              target="_blank"
+            >
+              Codecademy - Learn HTML
+            </a>
+          </li>
+        </ul>
+      </Slide>
+      <Slide title="Esercizio">
+        <p class="fragment">
+          Crea un documento HTML con un titolo, un'intestazione, un paragrafo e
+          un link.
+        </p>
+        <pre class="fragment">
+          <code>
+            {`<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Intestazione</h1>
+        <p>Questo è un paragrafo.</p>
+        <a href="https://www.google.com">Google</a>
+    </body>
+</html>`}
+          </code>
+        </pre>
+      </Slide>
+      <Slide title="Esercizio">
+        <p class="fragment">
+          Aggiungi un'immagine all'interno del documento HTML.
+        </p>
+        <pre class="fragment">
+          <code>
+            {`<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Intestazione</h1>
+        <p>Questo è un paragrafo.</p>
+        <a href="https://www.google.com">Google</a>
+        <img src="https://via.placeholder.com/150" alt="Placeholder" />
+    </body>
+</html>`}
+          </code>
+        </pre>
+      </Slide>
+      <Slide title="Esercizio">
+        <p class="fragment">
+          Aggiungi una lista di elementi al documento HTML.
+        </p>
+        <pre class="fragment">
+          <code>
+            {`<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Intestazione</h1>
+        <p>Questo è un paragrafo.</p>
+        <a href="https://www.google.com">Google</a>
+        <img src="https://via.placeholder.com/150" alt="Placeholder" />
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </body>
+</html>`}
+          </code>
+        </pre>
+      </Slide>
+      <Slide title="Esercizio">
+        <p class="fragment">
+          Aggiungi una tabella al documento HTML con almeno 3 righe e 3 colonne.
+        </p>
+        <pre class="fragment">
+          <code>
+            {`<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Intestazione</h1>
+        <p>Questo è un paragrafo.</p>
+        <a href="https://www.google.com">Google</a>
+        <img src="https://via.placeholder.com/150" alt="Placeholder" />
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <table>
+            <tr>
+                <td>Riga 1, Colonna 1</td>
+                <td>Riga 1, Colonna 2</td>
+                <td>Riga 1, Colonna 3</td>
+            </tr>
+            <tr>
+                <td>Riga 2, Colonna 1</td>
+                <td>Riga 2, Colonna 2</td>
+                <td>Riga 2, Colonna 3</td>
+            </tr>
+            <tr>
+                <td>Riga 3, Colonna 1</td>
+                <td>Riga 3, Colonna 2</td>
+                <td>Riga 3, Colonna 3</td>
+            </tr>
+        </table>
+    </body>
+    </html>`}
+          </code>
+        </pre>
+      </Slide>
+      <Slide title="Esercizio">
+        <p class="fragment">
+          Crea un form all'interno del documento HTML con un campo di testo e un
+          pulsante.
+        </p>
+        <pre class="fragment">
+          <code>
+            {`<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Intestazione</h1>
+        <p>Questo è un paragrafo.</p>
+        <a href="https://www.google.com">Google</a>
+        <img src="https://via.placeholder.com/150" alt="Placeholder" />
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <table>
+            <tr>
+                <td>Riga 1, Colonna 1</td>
+                <td>Riga 1, Colonna 2</td>
+                <td>Riga 1, Colonna 3</td>
+            </tr>
+            <tr>
+                <td>Riga 2, Colonna 1</td>
+                <td>Riga 2, Colonna 2</td>
+                <td>Riga 2, Colonna 3</td>
+            </tr>
+            <tr>
+                <td>Riga 3, Colonna 1</td>
+                <td>Riga 3, Colonna 2</td>
+                <td>Riga 3, Colonna 3</td>
+            </tr>
+        </table>
+        <form>
+            <input type="text" />
+            <button>Invia</button>
+        </form>
+    </body>
+</html>`}
+          </code>
+        </pre>
+      </Slide>
     </Deck>
   )
 })
