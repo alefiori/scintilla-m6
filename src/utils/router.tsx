@@ -13,8 +13,24 @@ export const menuElements = Object.keys(routes).filter(
   (route) => route !== ""
 ) as ReadonlyArray<Route>
 
-export const navigateTo = (route: Route): void => {
-  window.history.pushState({}, "", route)
+export const checkUrlParam = (param: string): boolean =>
+  new URLSearchParams(window.location.search).has(param)
+
+export const getPath = (
+  route: Route,
+  params?: string | Record<string, string>
+): string => {
+  if (params) {
+    route += "?" + new URLSearchParams(params).toString()
+  }
+  return route
+}
+
+export const navigateTo = (
+  route: Route,
+  params?: string | Record<string, string>
+): void => {
+  window.history.pushState({}, "", getPath(route, params))
   dispatchEvent(new PopStateEvent("popstate"))
 }
 

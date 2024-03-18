@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik"
-import { menuElements, navigateTo } from "../utils"
+import { getPath, menuElements, navigateTo } from "../utils"
 import { GitHubCorner } from "../components"
 
 export const Home = component$(() => {
@@ -11,7 +11,7 @@ export const Home = component$(() => {
       <h2 class="text-4xl font-extrabold">Progetto Scintilla - UNICAM</h2>
       <ul class="w-64 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-lg mx-auto mt-10">
         {menuElements.map((route, index) => (
-          <li key={index} class="flex gap-10">
+          <li key={index} class="flex">
             <button
               type="button"
               class="w-full px-4 py-2 font-medium text-center rtl:text-right border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-highlight focus:outline-none focus:ring-2 focus:ring-highlight focus:text-highlight"
@@ -19,6 +19,13 @@ export const Home = component$(() => {
             >
               Lezione {route}
             </button>
+            <a
+              href={getPath(route, "print-pdf")}
+              class="p-2 h-full"
+              target="_blank"
+            >
+              <img src="/print.png" alt="pdf" class="w-8 object-contain" />
+            </a>
           </li>
         ))}
       </ul>
