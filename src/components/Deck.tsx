@@ -18,7 +18,7 @@ export const Deck = component$(() => {
       plugins: [RevealHighlight, RevealNotes],
     })
     if (checkUrlParam("print-pdf")) {
-      setTimeout(window.print, 100)
+      setTimeout(window.print, 500)
     }
   })
 
