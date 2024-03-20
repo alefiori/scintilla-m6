@@ -12,7 +12,7 @@ export const Lesson2 = component$(() => {
           presentazione di un documento.
         </p>
         <p class="fragment">- Quali sono i principali linguaggi di markup?</p>
-        <p class="fragment italic">HTML, CSS, SVG, ecc...</p>
+        <p class="fragment italic">HTML, XML, SVG, ecc...</p>
         <p class="fragment">- Cos'è e per cosa utilizziamo l'HTML?</p>
         <p class="fragment italic">
           HTML è un linguaggio di markup che definisce la struttura di una
@@ -50,8 +50,8 @@ export const Lesson2 = component$(() => {
       </Slide>
       <Slide title="Struttura di un documento HTML">
         <pre class="fragment">
-          {`<!DOCTYPE html>
-<html>
+          <code>
+            {`<html>
     <head>
         <title>Titolo della pagina</title>
     </head>
@@ -60,6 +60,7 @@ export const Lesson2 = component$(() => {
         <p>Paragrafo di testo</p>
     </body>
 </html>`}
+          </code>
         </pre>
       </Slide>
       <Slide title="Tag HTML">
@@ -67,73 +68,30 @@ export const Lesson2 = component$(() => {
           I tag HTML sono parole chiave racchiuse tra parentesi angolari.
         </p>
         <pre class="fragment">{`<tag>Contenuto</tag>`}</pre>
-      </Slide>
-      <Slide title="Tag HTML">
         <p class="fragment">I tag HTML possono essere annidati.</p>
         <pre class="fragment">
-          {`<tag1>
+          <code>
+            {`<tag1>
     <tag2>Contenuto</tag2>
 </tag1>`}
+          </code>
         </pre>
-      </Slide>
-      <Slide title="Tag HTML">
-        <p class="fragment">I tag HTML possono essere vuoti.</p>
-        <pre class="fragment">{`<tag />`}</pre>
         <p class="fragment">
-          I tag vuoti non hanno contenuto e non hanno bisogno di essere chiusi.
+          I tag HTML possono essere vuoti e non hanno bisogno di essere chiusi.
         </p>
+        <pre class="fragment">
+          <code>{`<tag />`}</code>
+        </pre>
       </Slide>
       <Slide title="Principali Tag HTML">
         <p class="fragment">
-          <strong>h1, h2, h3, h4, h5, h6</strong> - Titoli
+          <strong>html</strong> - Radice del documento
         </p>
         <p class="fragment">
-          <strong>p</strong> - Paragrafi
+          <strong>head</strong> - Intestazione del documento
         </p>
         <p class="fragment">
-          <strong>a</strong> - Link
-        </p>
-        <p class="fragment">
-          <strong>img</strong> - Immagini
-        </p>
-        <p class="fragment">
-          <strong>ul, ol, li</strong> - Liste
-        </p>
-        <p class="fragment">
-          <strong>table, tr, td</strong> - Tabelle
-        </p>
-        <p class="fragment">
-          <strong>form, input, button</strong> - Form
-        </p>
-      </Slide>
-      <Slide title="Elementi HTML">
-        <p class="fragment">Gli elementi HTML possono avere attributi.</p>
-        <pre class="fragment">
-          {`<a href="https://www.google.com">Google</a>`}
-        </pre>
-        <p class="fragment">Gli attributi sono coppie chiave-valore.</p>
-        <p class="fragment">
-          Gli attributi forniscono informazioni aggiuntive.
-        </p>
-      </Slide>
-      <Slide title="Attributi HTML">
-        <p class="fragment">
-          <strong>href</strong> - Indirizzo del link
-        </p>
-        <p class="fragment">
-          <strong>src</strong> - Indirizzo dell'immagine
-        </p>
-        <p class="fragment">
-          <strong>alt</strong> - Testo alternativo per l'immagine
-        </p>
-        <p class="fragment">
-          <strong>class</strong> - Classe CSS
-        </p>
-        <p class="fragment">
-          <strong>id</strong> - Identificatore unico
-        </p>
-        <p class="fragment">
-          <strong>style</strong> - Stile CSS
+          <strong>body</strong> - Contenuto della pagina
         </p>
       </Slide>
       <Slide title="Il tag <head>">
@@ -197,6 +155,70 @@ export const Lesson2 = component$(() => {
           </a>
         </p>
       </Slide>
+      <Slide title="Principali Tag HTML - Body (1/2)">
+        <p class="fragment">
+          <strong>main</strong> - Contenuto principale
+        </p>
+        <p class="fragment">
+          <strong>header, footer, nav, aside</strong> - Sezioni
+        </p>
+        <p class="fragment">
+          <strong>section, article, div</strong> - Divisioni
+        </p>
+        <p class="fragment">
+          <strong>h1, h2, h3, h4, h5, h6</strong> - Titoli
+        </p>
+        <p class="fragment">
+          <strong>p</strong> - Paragrafi
+        </p>
+      </Slide>
+      <Slide title="Principali Tag HTML - Body (2/2)">
+        <p class="fragment">
+          <strong>a</strong> - Link
+        </p>
+        <p class="fragment">
+          <strong>img</strong> - Immagini
+        </p>
+        <p class="fragment">
+          <strong>ul, ol, li</strong> - Liste
+        </p>
+        <p class="fragment">
+          <strong>table, tr, td</strong> - Tabelle
+        </p>
+        <p class="fragment">
+          <strong>form, input, button</strong> - Form
+        </p>
+      </Slide>
+      <Slide title="Elementi HTML">
+        <p class="fragment">Gli elementi HTML possono avere attributi.</p>
+        <pre class="fragment">
+          {`<a href="https://www.google.com">Google</a>`}
+        </pre>
+        <p class="fragment">Gli attributi sono coppie chiave-valore.</p>
+        <p class="fragment">
+          Gli attributi forniscono informazioni aggiuntive.
+        </p>
+      </Slide>
+      <Slide title="Attributi HTML">
+        <p class="fragment">
+          <strong>href</strong> - Indirizzo del link
+        </p>
+        <p class="fragment">
+          <strong>src</strong> - Indirizzo dell'immagine
+        </p>
+        <p class="fragment">
+          <strong>alt</strong> - Testo alternativo per l'immagine
+        </p>
+        <p class="fragment">
+          <strong>class</strong> - Classe CSS
+        </p>
+        <p class="fragment">
+          <strong>id</strong> - Identificatore unico
+        </p>
+        <p class="fragment">
+          <strong>style</strong> - Stile CSS
+        </p>
+      </Slide>
       <Slide title="Risorse">
         <ul>
           <li class="fragment">
@@ -232,8 +254,7 @@ export const Lesson2 = component$(() => {
         </p>
         <pre class="fragment">
           <code>
-            {`<!DOCTYPE html>
-<html>
+            {`<html>
     <head>
         <title>Document</title>
     </head>
@@ -252,8 +273,7 @@ export const Lesson2 = component$(() => {
         </p>
         <pre class="fragment">
           <code>
-            {`<!DOCTYPE html>
-<html>
+            {`<html>
     <head>
         <title>Document</title>
     </head>
@@ -273,8 +293,7 @@ export const Lesson2 = component$(() => {
         </p>
         <pre class="fragment">
           <code>
-            {`<!DOCTYPE html>
-<html>
+            {`<html>
     <head>
         <title>Document</title>
     </head>
@@ -299,8 +318,7 @@ export const Lesson2 = component$(() => {
         </p>
         <pre class="fragment">
           <code>
-            {`<!DOCTYPE html>
-<html>
+            {`<html>
     <head>
         <title>Document</title>
     </head>
@@ -332,7 +350,7 @@ export const Lesson2 = component$(() => {
             </tr>
         </table>
     </body>
-    </html>`}
+</html>`}
           </code>
         </pre>
       </Slide>
@@ -343,8 +361,7 @@ export const Lesson2 = component$(() => {
         </p>
         <pre class="fragment">
           <code>
-            {`<!DOCTYPE html>
-<html>
+            {`<html>
     <head>
         <title>Document</title>
     </head>
@@ -383,6 +400,74 @@ export const Lesson2 = component$(() => {
 </html>`}
           </code>
         </pre>
+      </Slide>
+      <Slide title="Domande (1/3)">
+        <p class="fragment">
+          Cos'è un tag HTML? Quali sono le sue parti principali?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>html</strong> di un documento HTML?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>head</strong> di un documento HTML?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>body</strong> di un documento HTML?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>title</strong> di un documento HTML?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>meta</strong> di un documento HTML?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>link</strong> di un documento HTML?
+        </p>
+      </Slide>
+      <Slide title="Domande (2/3)">
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>script</strong> di un documento HTML?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta il tag <strong>style</strong> di un documento HTML?
+        </p>
+        <p class="fragment">
+          Con quali tag si definiscono i titoli di una pagina HTML?
+        </p>
+        <p class="fragment">
+          Con quale tag si definisce un paragrafo di testo?
+        </p>
+        <p class="fragment">Con quale tag si definisce un link?</p>
+        <p class="fragment">Con quale tag si definisce un'immagine?</p>
+        <p class="fragment">Con quali tag si definiscono le liste?</p>
+      </Slide>
+      <Slide title="Domande (3/3)">
+        <p class="fragment">Con quali tag si definiscono le tabelle?</p>
+        <p class="fragment">
+          Con quali tag si definiscono i form per la raccolta di dati?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta l'attributo <strong>href</strong> di un tag{" "}
+          <strong>a</strong>?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta l'attributo <strong>src</strong> di un tag{" "}
+          <strong>img</strong>?
+        </p>
+        <p class="fragment">
+          Cosa rappresenta l'attributo <strong>alt</strong> di un tag{" "}
+          <strong>img</strong>?
+        </p>
+      </Slide>
+      <Slide title="Iniziamo a creare un progetto">
+        <p class="fragment">
+          Creiamo le prime sezioni della nostra pagina personale. Come vogliamo
+          strutturarla? Definiamo un mockup.
+        </p>
+        <p class="fragment">
+          Creiamo un nuovo progetto con un documento HTML e definiamo la
+          struttura base.
+        </p>
       </Slide>
     </Deck>
   )
