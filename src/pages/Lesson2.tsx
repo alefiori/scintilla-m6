@@ -403,7 +403,7 @@ export const Lesson2 = component$(() => {
       </Slide>
       <Slide title="Domande (1/3)">
         <p class="fragment">
-          Cos'è un tag HTML? Quali sono le sue parti principali?
+          Cos'è un tag HTML?
         </p>
         <p class="fragment">
           Cosa rappresenta il tag <strong>html</strong> di un documento HTML?
