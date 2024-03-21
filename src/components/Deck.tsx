@@ -18,7 +18,10 @@ export const Deck = component$(() => {
       plugins: [RevealHighlight, RevealNotes],
     })
     if (checkUrlParam("print-pdf")) {
-      setTimeout(window.print, 500)
+      for (const el of document.querySelectorAll(".fragment")) {
+        el.classList.remove("fragment")
+      }
+      setTimeout(window.print, 300)
     }
   })
 
