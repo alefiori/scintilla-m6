@@ -96,6 +96,25 @@ export const Lesson3 = component$(() => {
           <strong>class</strong>
         </p>
       </Slide>
+      <Slide title="Esempio">
+        <pre>
+          <code>
+            {`.red {
+    color: red;
+}`}
+          </code>
+        </pre>
+        <pre>
+          <code>{`<h1 class="red">Titolo</h1>`}</code>
+        </pre>
+        <pre>
+          <code>{`<p class="red">Paragrafo</p>`}</code>
+        </pre>
+        <p class="fragment">
+          Questo esempio applica il colore rosso a tutti gli elementi con la
+          classe red
+        </p>
+      </Slide>
       <Slide title="Specificità">
         <p class="fragment">
           La specificità definisce quale stile viene applicato ad un elemento
@@ -116,6 +135,14 @@ export const Lesson3 = component$(() => {
           Il valore è composto da 4 cifre: inline, id, class, tag
         </p>
         <p class="fragment">Più alto è il valore, maggiore è la specificità</p>
+        <p class="fragment">
+          <a
+            href="https://www.html.it/pag/18946/calcolare-la-specificit/"
+            target="_blank"
+          >
+            Calcolatore di specificità
+          </a>
+        </p>
       </Slide>
       <Slide title="Dichiarazione">
         <p class="fragment">
@@ -125,17 +152,14 @@ export const Lesson3 = component$(() => {
           La proprietà definisce il tipo di stile da applicare
         </p>
         <p class="fragment">Il valore definisce il valore dello stile</p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
   color: red;
 }`}
-          </code>
-        </pre>
-        <p class="fragment">
-          Questo esempio applica il colore rosso a tutti gli elementi h1
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Proprietà">
@@ -177,17 +201,32 @@ export const Lesson3 = component$(() => {
         <p class="fragment">
           I colori possono essere definiti in RGB, HEX, HSL, nome
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  color: #ff0000;
-}`}
-          </code>
-        </pre>
         <p class="fragment">
-          Questo esempio applica il colore rosso a tutti gli elementi h1
+          <pre>
+            <code>
+              {`h1 {
+  color: rgb(255, 0, 0);
+}
+h1 {
+  color: #ff0000;
+}
+h1 {
+  color: hsl(0, 100%, 50%);
+}
+h1 {
+  color: red;
+}`}
+            </code>
+          </pre>
+        </p>
+        <p class="fragment">
+          <a
+            href="https://htmlcolorcodes.com/"
+            target="_blank"
+            class="fragment"
+          >
+            Selezionatore di colori
+          </a>
         </p>
       </Slide>
       <Slide title="Background">
@@ -198,18 +237,20 @@ export const Lesson3 = component$(() => {
           La proprietà background può definire il colore, l'immagine, la
           posizione
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  background-color: #ff0000;
-}`}
-          </code>
-        </pre>
         <p class="fragment">
-          Questo esempio applica il colore rosso allo sfondo di tutti gli
-          elementi h1
+          <pre>
+            <code>
+              {`h1 {
+  background-color: #ff0000;
+}
+h1 {
+  background-image: url('image.jpg');
+}
+h1 {
+  background-position: center;
+}`}
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Font">
@@ -217,20 +258,23 @@ export const Lesson3 = component$(() => {
           La proprietà font definisce il font di un elemento
         </p>
         <p class="fragment">
-          La proprietà font può definire il tipo di font, la dimensione, il
-          colore
+          La proprietà font può definire il tipo di font, la dimensione, il peso
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  font-family: Arial;
-}`}
-          </code>
-        </pre>
         <p class="fragment">
-          Questo esempio applica il font Arial a tutti gli elementi h1
+          <pre>
+            <code>
+              {`h1 {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+}`}
+            </code>
+          </pre>
+        </p>
+        <p class="fragment">
+          <a href="https://fonts.google.com/" target="_blank">
+            Google Fonts
+          </a>
         </p>
       </Slide>
       <Slide title="Margin">
@@ -241,18 +285,17 @@ export const Lesson3 = component$(() => {
           La proprietà margin può definire il margine superiore, destro,
           inferiore, sinistro
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  margin-top: 10px;
-}`}
-          </code>
-        </pre>
         <p class="fragment">
-          Questo esempio applica un margine di 10px sopra a tutti gli elementi
-          h1
+          <pre>
+            <code>
+              {`h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}`}
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Padding">
@@ -263,18 +306,17 @@ export const Lesson3 = component$(() => {
           La proprietà padding può definire il padding superiore, destro,
           inferiore, sinistro
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  padding-top: 10px;
-}`}
-          </code>
-        </pre>
         <p class="fragment">
-          Questo esempio applica un padding di 10px sopra a tutti gli elementi
-          h1
+          <pre>
+            <code>
+              {`h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}`}
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Border">
@@ -284,17 +326,14 @@ export const Lesson3 = component$(() => {
         <p class="fragment">
           La proprietà border può definire il colore, lo spessore, il tipo
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
   border: 1px solid black;
 }`}
-          </code>
-        </pre>
-        <p class="fragment">
-          Questo esempio applica un bordo di 1px nero a tutti gli elementi h1
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Box Model">
@@ -304,26 +343,22 @@ export const Lesson3 = component$(() => {
         <p class="fragment">
           Il box model è composto da margin, border, padding, content
         </p>
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}`}
+            </code>
+          </pre>
+        </p>
       </Slide>
       <Slide title="Box Model">
         <div class="fragment r-stack">
           <img src="/margin.png" alt="screenshot" />
         </div>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  margin: 10px;
-  border: 1px solid black;
-  padding: 10px;
-}`}
-          </code>
-        </pre>
-        <p class="fragment">
-          Questo esempio applica un margine, un bordo e un padding a tutti gli
-          elementi h1
-        </p>
       </Slide>
       <Slide title="Posizionamento">
         <p class="fragment">
@@ -332,18 +367,14 @@ export const Lesson3 = component$(() => {
         <p class="fragment">
           Il posizionamento può essere static, relative, absolute, fixed
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
   position: relative;
 }`}
-          </code>
-        </pre>
-        <p class="fragment">
-          Questo esempio definisce la posizione relativa di tutti gli elementi
-          h1
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Float">
@@ -351,17 +382,14 @@ export const Lesson3 = component$(() => {
           Il float definisce la posizione di un elemento rispetto agli altri
         </p>
         <p class="fragment">Il float può essere left, right, none, inherit</p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
   float: left;
 }`}
-          </code>
-        </pre>
-        <p class="fragment">
-          Questo esempio fa flottare a sinistra tutti gli elementi h1
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Display">
@@ -371,18 +399,48 @@ export const Lesson3 = component$(() => {
         <p class="fragment">
           Il display può essere block, inline, inline-block, none
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
   display: block;
 }`}
-          </code>
-        </pre>
+            </code>
+          </pre>
+        </p>
+      </Slide>
+      <Slide title="Flexbox">
+        <p class="fragment">Il flexbox permette di creare layout flessibili</p>
         <p class="fragment">
-          Questo esempio definisce il tipo di visualizzazione di tutti gli
-          elementi h1
+          Il flexbox permette di allineare, distribuire, ordinare gli elementi
+        </p>
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}`}
+            </code>
+          </pre>
+        </p>
+      </Slide>
+      <Slide title="Grid">
+        <p class="fragment">Il grid permette di creare layout complessi</p>
+        <p class="fragment">
+          Il grid permette di definire colonne, righe, aree di un layout
+        </p>
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}`}
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Pseudo-classi">
@@ -392,18 +450,14 @@ export const Lesson3 = component$(() => {
         <p class="fragment">
           Le pseudo-classi possono essere hover, active, focus, visited
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1:hover {
+        <p class="fragment">
+          <pre>
+            <code>
+              {`h1:hover {
   color: red;
 }`}
-          </code>
-        </pre>
-        <p class="fragment">
-          Questo esempio applica il colore rosso agli elementi h1 al passaggio
-          del mouse
+            </code>
+          </pre>
         </p>
       </Slide>
       <Slide title="Media Queries">
@@ -414,76 +468,150 @@ export const Lesson3 = component$(() => {
           Le media queries possono essere basate su larghezza, altezza,
           orientamento
         </p>
-      </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`@media screen and (max-width: 600px) {
+        <p class="fragment">
+          <pre>
+            <code>
+              {`@media screen and (max-width: 600px) {
   h1 {
     color: red;
   }
 }`}
-          </code>
-        </pre>
-        <p class="fragment">
-          Questo esempio applica il colore rosso agli elementi h1 su schermi con
-          larghezza massima di 600px
+            </code>
+          </pre>
         </p>
       </Slide>
-      <Slide title="Flexbox">
-        <p class="fragment">Il flexbox permette di creare layout flessibili</p>
+      <Slide title="Esercizio">
         <p class="fragment">
-          Il flexbox permette di allineare, distribuire, ordinare gli elementi
+          Creare una pagina HTML con un titolo e un paragrafo
+        </p>
+        <p class="fragment">
+          Aggiungere al titolo il colore rosso e il font Arial
+        </p>
+        <p class="fragment">
+          Aggiungere al paragrafo il colore blu, il font Verdana e il padding di
+          10px
         </p>
       </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}`}
-          </code>
-        </pre>
+      <Slide title="Soluzione">
         <p class="fragment">
-          Questo esempio allinea al centro tutti gli elementi h1
+          <pre>
+            <code>
+              {`<html>
+  <head>
+    <style>
+      h1 {
+        color: red;
+        font-family: Arial;
+      }
+      p {
+        color: blue;
+        font-family: Verdana;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Titolo</h1>
+    <p>Paragrafo</p>
+  </body>
+</html>`}
+            </code>
+          </pre>
         </p>
       </Slide>
-      <Slide title="Grid">
-        <p class="fragment">Il grid permette di creare layout complessi</p>
+      <Slide title="Esercizio - flexbox">
         <p class="fragment">
-          Il grid permette di definire colonne, righe, aree di un layout
+          Creare una pagina HTML con 3 elementi allineati orizzontalmente
+        </p>
+        <p class="fragment">
+          Aggiungere un gap di 10px tra gli elementi e centrarli verticalmente
+        </p>
+        <p class="fragment">
+          Aggiungere un padding di 10px agli elementi e un bordo di 1px
+        </p>
+        <p class="fragment">
+          Aggiungere un colore di sfondo grigio agli elementi
         </p>
       </Slide>
-      <Slide title="Esempio">
-        <pre>
-          <code>
-            {`h1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}`}
-          </code>
-        </pre>
+      <Slide title="Soluzione - flexbox">
         <p class="fragment">
-          Questo esempio definisce un layout a 2 colonne e 2 righe per tutti gli
-          elementi h1
+          <pre>
+            <code>
+              {`<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        padding: 10px;
+        border: 1px solid black;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Elemento 1</div>
+      <div class="item">Elemento 2</div>
+      <div class="item">Elemento 3</div>
+    </div>
+  </body>
+</html>`}
+            </code>
+          </pre>
         </p>
       </Slide>
-      <Slide title="Conclusioni">
-        <ul>
-          <li class="fragment">
-            Il CSS è utilizzato per aggiungere lo stile ad una pagina HTML
-          </li>
-          <li class="fragment">Il CSS può essere applicato in diversi modi</li>
-          <li class="fragment">
-            Il CSS è composto da selettori e dichiarazioni
-          </li>
-          <li class="fragment">
-            Il CSS è importante per definire l'aspetto di una pagina web
-          </li>
-        </ul>
+      <Slide title="Esercizio - Grid">
+        <p class="fragment">
+          Creare una pagina HTML con 4 elementi allineati in una griglia
+        </p>
+        <p class="fragment">
+          Aggiungere un gap di 10px tra gli elementi e centrarli verticalmente
+        </p>
+        <p class="fragment">
+          Aggiungere un padding di 10px agli elementi e un bordo di 1px
+        </p>
+        <p class="fragment">
+          Aggiungere un colore di sfondo grigio agli elementi
+        </p>
+      </Slide>
+      <Slide title="Soluzione - Grid">
+        <p class="fragment">
+          <pre>
+            <code>
+              {`<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        padding: 10px;
+        border: 1px solid black;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Elemento 1</div>
+      <div class="item">Elemento 2</div>
+      <div class="item">Elemento 3</div>
+      <div class="item">Elemento 4</div>
+    </div>
+  </body>
+</html>`}
+            </code>
+          </pre>
+        </p>
       </Slide>
     </Deck>
   )
