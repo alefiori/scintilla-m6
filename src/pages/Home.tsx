@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik"
-import { getPath, menuElements, navigateTo } from "../utils"
 import { GitHubCorner } from "../components"
+import { menuElements } from "../constants"
+import { getPath, navigateTo } from "../utils"
 
 export const Home = component$(() => {
   return (
