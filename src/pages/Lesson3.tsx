@@ -220,11 +220,7 @@ h1 {
           </pre>
         </p>
         <p class="fragment">
-          <a
-            href="https://htmlcolorcodes.com/"
-            target="_blank"
-            class="fragment"
-          >
+          <a href="https://htmlcolorcodes.com/" target="_blank">
             Selezionatore di colori
           </a>
         </p>
@@ -397,7 +393,7 @@ h1 {
           Il display definisce il tipo di visualizzazione di un elemento
         </p>
         <p class="fragment">
-          Il display può essere block, inline, inline-block, none
+          Il display può essere block, inline, inline-block, none, flex, grid
         </p>
         <p class="fragment">
           <pre>
@@ -612,6 +608,60 @@ h1 {
             </code>
           </pre>
         </p>
+      </Slide>
+      <Slide title="Esercizio - Grid">
+        <p class="fragment">
+          Aggiungere una media query per visualizzare 1 elemento per riga su un
+          dispositivo con larghezza inferiore a 600px
+        </p>
+        <p class="fragment">
+          <pre>
+            <code>
+              {`@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}`}
+            </code>
+          </pre>
+        </p>
+      </Slide>
+      <Slide title="Domande (1/3)">
+        <p class="fragment">Cosa significa CSS?</p>
+        <p class="fragment">Cosa definisce il selettore?</p>
+        <p class="fragment">Cosa definisce la dichiarazione?</p>
+        <p class="fragment">Come si calcola la specificità?</p>
+        <p class="fragment">Cosa definisce la proprietà?</p>
+        <p class="fragment">Cosa definisce il valore?</p>
+      </Slide>
+      <Slide title="Domande (2/3)">
+        <p class="fragment">Cosa definisce l'unità di misura?</p>
+        <p class="fragment">Cosa definisce il colore?</p>
+        <p class="fragment">
+          Cosa definisce la proprietà background e come si utilizza?
+        </p>
+        <p class="fragment">
+          Cosa definisce la proprietà font e come si utilizza?
+        </p>
+        <p class="fragment">
+          Cosa definisce la proprietà margin e come si utilizza?
+        </p>
+        <p class="fragment">
+          Cosa definisce la proprietà padding e come si utilizza?
+        </p>
+      </Slide>
+      <Slide title="Domande (3/3)">
+        <p class="fragment">
+          Cosa definisce la proprietà border e come si utilizza?
+        </p>
+        <p class="fragment">Cosa definisce il box model e come si utilizza?</p>
+        <p class="fragment">
+          Cosa definisce il posizionamento e come si utilizza?
+        </p>
+        <p class="fragment">Cosa definisce il float e come si utilizza?</p>
+        <p class="fragment">Cosa definisce il display e come si utilizza?</p>
+        <p class="fragment">Cosa definisce il flexbox e come si utilizza?</p>
+        <p class="fragment">Cosa definisce il grid e come si utilizza?</p>
       </Slide>
     </Deck>
   )
