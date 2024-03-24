@@ -1,4 +1,4 @@
-import { Home, Lesson1, Lesson2, Lesson3, Lesson4 } from "../pages"
+import { Home, Lesson1, Lesson2, Lesson3, Lesson4, Lesson5 } from "../pages"
 import { Routes } from "../types"
 
 export const routes = {
@@ -7,6 +7,7 @@ export const routes = {
   "2": <Lesson2 />,
   "3": <Lesson3 />,
   "4": <Lesson4 />,
+  "5": <Lesson5 />,
 }
 
 export const routeNames = Object.keys(routes) as Routes
