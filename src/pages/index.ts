@@ -1,3 +1,6 @@
 export * from "./Home"
 export * from "./Lesson1"
 export * from "./Lesson2"
+export * from "./Lesson3"
+export * from "./Lesson4"
+export * from "./Lesson5"
