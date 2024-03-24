@@ -2,8 +2,6 @@ import { JSXOutput, useSignal, useTask$ } from "@builder.io/qwik"
 import { routeNames, routes } from "../constants"
 import { Params, Route } from "../types"
 
-export const menuElements = routeNames.filter((route) => route !== "")
-
 export const checkUrlParam = (param: string): boolean =>
   new URLSearchParams(window.location.search).has(param)
 
