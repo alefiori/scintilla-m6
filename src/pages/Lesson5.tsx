@@ -399,6 +399,12 @@ console.log(json); // {"name":"John Doe","age":30}`}
 element.innerHTML = 'Hello, world!';`}
           </code>
         </pre>
+        <a
+          class="fragment"
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+        >
+          Leggi di più sul DOM
+        </a>
       </Slide>
       <Slide title="JavaScript - eventi">
         <p class="fragment">
