@@ -82,46 +82,78 @@ export const Lesson6 = component$(() => {
           <li>Comunità</li>
         </ul>
       </Slide>
-        <Slide title="Facilità d'uso">
-            <p class="fragment">
-            La facilità d'uso è un criterio importante quando scegliamo una
-            libreria o un framework JavaScript.
-            </p>
-            <p class="fragment">
-            Dobbiamo scegliere una libreria o un framework che ci permetta di
-            scrivere codice in modo semplice e veloce.
-            </p>
-        </Slide>
-        <Slide title="Performance">
-            <p class="fragment">
-            La performance è un criterio importante quando scegliamo una libreria
-            o un framework JavaScript.
-            </p>
-            <p class="fragment">
-            Dobbiamo scegliere una libreria o un framework che ci permetta di
-            creare applicazioni veloci e reattive.
-            </p>
-        </Slide>
-        <Slide title="Documentazione">
-            <p class="fragment">
-            La documentazione è un criterio importante quando scegliamo una
-            libreria o un framework JavaScript.
-            </p>
-            <p class="fragment">
-            Dobbiamo scegliere una libreria o un framework che abbia una
-            documentazione chiara e completa.
-            </p>
-        </Slide>
-        <Slide title="Comunità">
-            <p class="fragment">
-            La comunità è un criterio importante quando scegliamo una libreria o
-            un framework JavaScript.
-            </p>
-            <p class="fragment">
-            Dobbiamo scegliere una libreria o un framework che abbia una grande
-            comunità di sviluppatori attivi.
-            </p>
-        </Slide>
+      <Slide title="Facilità d'uso">
+        <p class="fragment">
+          La facilità d'uso è un criterio importante quando scegliamo una
+          libreria o un framework JavaScript.
+        </p>
+        <p class="fragment">
+          Dobbiamo scegliere una libreria o un framework che ci permetta di
+          scrivere codice in modo semplice e veloce.
+        </p>
+      </Slide>
+      <Slide title="Performance">
+        <p class="fragment">
+          La performance è un criterio importante quando scegliamo una libreria
+          o un framework JavaScript.
+        </p>
+        <p class="fragment">
+          Dobbiamo scegliere una libreria o un framework che ci permetta di
+          creare applicazioni veloci e reattive.
+        </p>
+      </Slide>
+      <Slide title="Documentazione">
+        <p class="fragment">
+          La documentazione è un criterio importante quando scegliamo una
+          libreria o un framework JavaScript.
+        </p>
+        <p class="fragment">
+          Dobbiamo scegliere una libreria o un framework che abbia una
+          documentazione chiara e completa.
+        </p>
+      </Slide>
+      <Slide title="Comunità">
+        <p class="fragment">
+          La comunità è un criterio importante quando scegliamo una libreria o
+          un framework JavaScript.
+        </p>
+        <p class="fragment">
+          Dobbiamo scegliere una libreria o un framework che abbia una grande
+          comunità di sviluppatori attivi.
+        </p>
+      </Slide>
+      <Slide title="Creiamo la nostra webapp!">
+        <ul>
+          <li class="fragment">
+            <strong>Cosa</strong>: creare una webapp che permetta di gestire la
+            nostra lista della spesa.
+          </li>
+          <li class="fragment">
+            <strong>Come</strong>: utilizzando HTML per la struttura, CSS per lo
+            stile e JavaScript per la logica.
+          </li>
+          <li class="fragment">
+            <strong>Perché</strong>: per mettere in pratica quanto abbiamo
+            imparato.
+          </li>
+        </ul>
+      </Slide>
+      <Slide title="Requisiti">
+        <ul>
+          <li class="fragment">Creare una lista della spesa</li>
+          <li class="fragment">Aggiungere un elemento alla lista</li>
+          <li class="fragment">Rimuovere un elemento dalla lista</li>
+          <li class="fragment">
+            Segnare un elemento come completato/acquistato
+          </li>
+          <li class="fragment">
+            Filtrare gli elementi della lista per completati/non completati
+          </li>
+          <li class="fragment">
+            Salvare la lista della spesa sul dispositivo dell'utente
+          </li>
+        </ul>
+      </Slide>
     </Deck>
   )
 })
