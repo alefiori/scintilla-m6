@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik"
 import { GitHubCorner } from "../components"
+import { FeedbacksButton } from "../components/FeedbacksButton"
 import { menuElements } from "../constants"
 import { getPath, navigateTo } from "../utils"
 
@@ -31,6 +32,7 @@ export const Home = component$(() => {
         ))}
       </ul>
       <GitHubCorner />
+      <FeedbacksButton/>
     </main>
   )
 })
