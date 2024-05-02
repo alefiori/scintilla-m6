@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik"
 import { GitHubCorner } from "../components"
+import { FeedbacksButton } from "../components/FeedbacksButton"
 import { menuElements } from "../constants"
 import { getPath, navigateTo } from "../utils"
 
@@ -30,7 +31,15 @@ export const Home = component$(() => {
           </li>
         ))}
       </ul>
+      <a
+        target="_blank"
+        href="https://github.com/alefiori/scintilla-m6/tree/main/shopping"
+        class="block mt-4 text-highlight hover:underline"
+      >
+        Esempio lista della spesa
+      </a>
       <GitHubCorner />
+      <FeedbacksButton />
     </main>
   )
 })

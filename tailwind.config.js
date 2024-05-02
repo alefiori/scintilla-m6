@@ -6,6 +6,7 @@ export default {
       fontFamily: "Lato, sans-serif",
       colors: {
         highlight: "#C0A86E",
+        "highlight-dark": "#A18D5A",
       },
     },
   },

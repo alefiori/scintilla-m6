@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Lista della spesa</title>
+    <link rel="icon" href="shopping-cart.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">La mia lista della spesa</h1>
+    <div class="add-form">
+      <input type="text" id="text-input" />
+      <button id="add-button" class="button">Aggiungi</button>
+      <div id="filter">
+        <span>Filtra</span>
+        <img class="filter-icon" title="filter" src="filter.png" alt="filter" />
+      </div>
+    </div>
+    <ul id="list"></ul>
+    <p id="empty-list" class="hidden">La lista è vuota</p>
+    <div id="filter-modal" class="modal">
+      <div class="modal-content">
+        <span id="filter-modal-close" class="modal-close" title="close">&times;</span>
+        <h2>Filtra elementi:</h2>
+        <select name="filter" id="filter-select">
+          <option value="all">Tutti</option>
+          <option value="done">Completati</option>
+          <option value="not-done">Non completati</option>
+        </select>
+      </div>
+    </div>
+    <div id="remove-modal" class="modal">
+      <div class="modal-content">
+        <span id="remove-modal-close" class="modal-close" title="close">&times;</span>
+        <h2>Sei sicuro di voler eliminare l'elemento?</h2>
+        <p id="remove-modal-element"></p>
+        <button id="remove-modal-button" class="button">Elimina</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
